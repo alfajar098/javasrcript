@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funcgtion</title>
+</head>
+<body>
+    <h1>latihan function</h1>
+
+    <h3>Soal 1</h3>
+    <div id="jawaban1">
+
+    </div>
+
+    <h3>soal 2</h3>
+    <div id="jawaban2">
+
+    </div>
+
+    <h3>soal3</h3>
+    <div id="jawaban3">
+
+    </div>
+
+    <h3>soal4</h3>
+    <div id="jawaban4">
+
+    </div>
+
+    <script>
+        function tampilan() {
+            document.getElementById("contohjawaban").innerHTML = "aku tampil"
+        }
+
+        function tes() {
+            document.getElementById("jawaban1").innerHTML = "hallo world"
+        }
+
+        tes()
+
+        function kali(num1, num2){
+            document.getElementById('jawaban2').innerHTML = num1 + num2;
+        }
+        kali(10,11)
+
+        function tambah(num1, num2, num3){
+            document.getElementById("jawaban3").innerHTML = num1 + num2 * num3;
+        }
+        tambah(30,20,11)
+
+        function buatKalimat(nama, umur, alamat, hobi)
+
+        var bio = "nama : " + nama + "umur " + umur + "alamat saya " + alamat + "hobi saya" + hobi
+
+        document.getElementById("jawaban4").innerHTML = bio
+        
+        var name = "ali";
+        var age = 29;
+        var address = "jln tabakung 2";
+        var hobby = "bersepedah";
+        buatKalimat(name, age, address, hobby)
+    </script>
+</body>
+</html>
